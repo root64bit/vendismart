@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | VendiSmart UK</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#d9dade",
+                        "primary-fixed": "#e7deff",
+                        "surface-tint": "#6539e3",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#464749",
+                        "surface-bright": "#f8f9fd",
+                        "inverse-primary": "#ccbeff",
+                        "secondary-container": "#00ccf9",
+                        "cyan-tech": "#00D1FF",
+                        "on-background": "#191c1f",
+                        "tertiary-container": "#49494b",
+                        "tertiary-fixed": "#e3e2e4",
+                        "outline": "#797487",
+                        "surface": "#f8f9fd",
+                        "tertiary-fixed-dim": "#c7c6c8",
+                        "primary": "#37009e",
+                        "surface-container-high": "#e7e8ec",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1f",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#b7eaff",
+                        "on-tertiary-container": "#b9b8bb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#4c10cb",
+                        "on-primary-fixed": "#1e0060",
+                        "background": "#f8f9fd",
+                        "electric-indigo": "#673DE6",
+                        "surface-variant": "#e1e2e6",
+                        "inverse-on-surface": "#eff1f5",
+                        "on-secondary-fixed": "#001f28",
+                        "on-secondary-fixed-variant": "#004e60",
+                        "primary-container": "#4f17ce",
+                        "on-surface-variant": "#484455",
+                        "on-tertiary-fixed": "#1b1c1e",
+                        "border-light": "#D5DFFF",
+                        "surface-container-low": "#f2f3f7",
+                        "inverse-surface": "#2e3134",
+                        "surface-container": "#edeef2",
+                        "secondary": "#00677f",
+                        "on-secondary-container": "#005266",
+                        "surface-muted": "#F4F5FF",
+                        "secondary-fixed-dim": "#4cd6ff",
+                        "primary-fixed-dim": "#ccbeff",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#cac3d8",
+                        "tertiary": "#323335",
+                        "surface-container-highest": "#e1e2e6",
+                        "charcoal-navy": "#1D1E20",
+                        "on-primary-container": "#bfaeff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "base": "8px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-caps": ["Inter"],
+                        "button": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "button": ["16px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["60px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .glow-shadow {
+            box-shadow: 0 10px 40px -10px rgba(0, 209, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-electric-indigo selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed w-full top-0 left-0 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm z-50 transition-all duration-300 glass-nav" id="mainNav">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-electric-indigo" style="font-variation-settings: 'FILL' 1;">qr_code_2</span>
+                VendiSmart
+            </a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex items-center gap-8">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:translate-y-[-2px] duration-300 block" href="#">Home</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:translate-y-[-2px] duration-300 block" href="#">How It Works</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:translate-y-[-2px] duration-300 block" href="#">Benefits</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:translate-y-[-2px] duration-300 block" href="#">Locations</a></li>
+<li><a class="text-primary font-bold border-b-2 border-primary pb-1 font-button text-button block" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-button text-button hover:translate-y-[-2px] duration-300 block" href="#">FAQs</a></li>
+</ul>
+<div class="hidden md:flex items-center">
+<a class="bg-electric-indigo text-on-primary font-button text-button px-6 py-3 rounded-full hover:translate-y-[-2px] hover:shadow-[0_4px_20px_rgba(103,61,230,0.4)] transition-all duration-300 Active:scale-95 flex items-center gap-2" href="#contact">
+                    Request a Machine
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="md:hidden text-primary p-2" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<!-- Mobile Nav Menu (Hidden by default) -->
+<div class="md:hidden hidden bg-surface absolute top-full left-0 w-full shadow-lg border-t border-border-light" id="mobileMenu">
+<ul class="flex flex-col py-4 px-margin-mobile">
+<li><a class="block py-3 text-on-surface-variant font-button text-button" href="#">Home</a></li>
+<li><a class="block py-3 text-on-surface-variant font-button text-button" href="#">How It Works</a></li>
+<li><a class="block py-3 text-on-surface-variant font-button text-button" href="#">Benefits</a></li>
+<li><a class="block py-3 text-on-surface-variant font-button text-button" href="#">Locations</a></li>
+<li><a class="block py-3 text-primary font-bold font-button text-button" href="#">About Us</a></li>
+<li><a class="block py-3 text-on-surface-variant font-button text-button" href="#">FAQs</a></li>
+<li class="pt-4 mt-2 border-t border-surface-variant">
+<a class="bg-electric-indigo text-on-primary font-button text-button px-6 py-3 rounded-full w-full text-center block" href="#contact">Request a Machine</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-[140px] pb-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-muted">
+<!-- Abstract Background Elements -->
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-fixed-dim rounded-full blur-[120px] opacity-40 translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary-fixed-dim rounded-full blur-[100px] opacity-30 -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+<!-- Dot Pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(var(--tw-colors-primary) 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-container-max mx-auto relative z-10 grid md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 flex flex-col items-start gap-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container border border-border-light">
+<span class="material-symbols-outlined text-electric-indigo text-[16px]" style="font-variation-settings: 'FILL' 1;">corporate_fare</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">About VendiSmart</span>
+</div>
+<h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background max-w-[800px]">
+                    Smart vending, <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-electric-indigo to-cyan-tech">professionally managed</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[600px] leading-relaxed">
+                    We are modernizing workplace refreshments across the UK. By combining state-of-the-art telemetry with rigorous service standards, we ensure your team never runs out of fuel.
+                </p>
+<div class="pt-4 flex flex-wrap gap-4">
+<a class="bg-charcoal-navy text-white font-button text-button px-8 py-4 rounded-full hover:bg-on-background transition-colors flex items-center gap-2 group" href="#mission">
+                        Our Mission
+                        <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform">arrow_downward</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] bg-surface">
+<img class="w-full h-full object-cover" data-alt="A high-quality, professional photograph of a sleek, modern, smart vending machine placed in a bright, contemporary corporate office breakroom. The lighting is high-key and soft, highlighting the machine's interactive digital touchscreen and clean white and electric indigo branding. The atmosphere is professional, tech-forward, and inviting, reflecting a premium corporate infrastructure aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiI7TDPgtw3uM-hsEYXFVP_UYC72oMALw0FyGJ_LYZ6EcfXUER5YWkkFaAL4JNeyfhY67NZw6pvrSosOXfB7nVVydvzgVNFQWhNKIbE25g9rKxkUc91nRCVCinTtczygoRKIYIcXxPoZttst9ZYCZGonsWrAjP_H3_Tk02b_KQF_HqTHW_o7MlzjX7k_nAtG7qB9KFjjy6WIzHmzXh3lCY_ftgAg_dmnZ--1wgoKeEjh-jmvH6W_l6"/>
+<!-- Floating Tech Badge -->
+<div class="absolute bottom-6 -left-6 md:-left-12 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-border-light flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-muted flex items-center justify-center text-electric-indigo">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div>
+<p class="font-button text-button text-on-background">Fully Managed</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Zero Hassle</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Footer -->
+<footer class="bg-charcoal-navy dark:bg-charcoal-navy w-full relative z-10 border-t-4 border-electric-indigo">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-2 md:col-span-1 mb-8 md:mb-0">
+<a class="font-headline-md text-headline-md text-white mb-6 block flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-cyan-tech" style="font-variation-settings: 'FILL' 1;">qr_code_2</span>
+                    VendiSmart
+                </a>
+<p class="font-body-md text-body-md text-on-tertiary-container mt-4 pr-4">
+                    Modernizing Workplace Refreshments across the United Kingdom with smart, reliable infrastructure.
+                </p>
+</div>
+<div>
+<h4 class="font-button text-button text-white mb-6">Company</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">How It Works</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Benefits</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Locations</a></li>
+<li><a class="font-body-md text-body-md text-cyan-tech hover:text-cyan-tech transition-colors" href="#">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button text-button text-white mb-6">Support</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">FAQs</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Help Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button text-button text-white mb-6">Legal</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-6 border-t border-tertiary flex justify-between items-center">
+<p class="font-body-md text-body-md text-on-tertiary-container">© 2024 VendiSmart UK. Modernizing Workplace Refreshments.</p>
+</div>
+</footer>
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            if(mobileMenu.classList.contains('hidden')) {
+                icon.textContent = 'menu';
+            } else {
+                icon.textContent = 'close';
+            }
+        });
+
+        // Sticky Nav Blur on Scroll
+        const mainNav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                mainNav.classList.add('shadow-md');
+                mainNav.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                mainNav.classList.remove('shadow-md');
+                mainNav.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>

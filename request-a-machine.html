@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Vending Machine | VendiSmart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d9dade",
+                    "primary-fixed": "#e7deff",
+                    "surface-tint": "#6539e3",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#464749",
+                    "surface-bright": "#f8f9fd",
+                    "inverse-primary": "#ccbeff",
+                    "secondary-container": "#00ccf9",
+                    "cyan-tech": "#00D1FF",
+                    "on-background": "#191c1f",
+                    "tertiary-container": "#49494b",
+                    "tertiary-fixed": "#e3e2e4",
+                    "outline": "#797487",
+                    "surface": "#f8f9fd",
+                    "tertiary-fixed-dim": "#c7c6c8",
+                    "primary": "#37009e",
+                    "surface-container-high": "#e7e8ec",
+                    "error-container": "#ffdad6",
+                    "on-surface": "#191c1f",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#b7eaff",
+                    "on-tertiary-container": "#b9b8bb",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#4c10cb",
+                    "on-primary-fixed": "#1e0060",
+                    "background": "#f8f9fd",
+                    "electric-indigo": "#673DE6",
+                    "surface-variant": "#e1e2e6",
+                    "inverse-on-surface": "#eff1f5",
+                    "on-secondary-fixed": "#001f28",
+                    "on-secondary-fixed-variant": "#004e60",
+                    "primary-container": "#4f17ce",
+                    "on-surface-variant": "#484455",
+                    "on-tertiary-fixed": "#1b1c1e",
+                    "border-light": "#D5DFFF",
+                    "surface-container-low": "#f2f3f7",
+                    "inverse-surface": "#2e3134",
+                    "surface-container": "#edeef2",
+                    "secondary": "#00677f",
+                    "on-secondary-container": "#005266",
+                    "surface-muted": "#F4F5FF",
+                    "secondary-fixed-dim": "#4cd6ff",
+                    "primary-fixed-dim": "#ccbeff",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#cac3d8",
+                    "tertiary": "#323335",
+                    "surface-container-highest": "#e1e2e6",
+                    "charcoal-navy": "#1D1E20",
+                    "on-primary-container": "#bfaeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "margin-mobile": "20px",
+                    "base": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-caps": [
+                            "Inter"
+                    ],
+                    "button": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-xl": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "30px",
+                            {
+                                    "lineHeight": "38px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "button": [
+                            "16px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl": [
+                            "60px",
+                            {
+                                    "lineHeight": "72px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(248, 249, 253, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--tw-colors-border-light);
+        }
+        .step-active .step-icon {
+            background-color: var(--tw-colors-electric-indigo);
+            color: var(--tw-colors-on-primary);
+            box-shadow: 0 4px 14px 0 rgba(103, 61, 230, 0.39);
+        }
+        .step-completed .step-icon {
+            background-color: var(--tw-colors-cyan-tech);
+            color: var(--tw-colors-charcoal-navy);
+        }
+        .step-inactive .step-icon {
+            background-color: var(--tw-colors-surface-variant);
+            color: var(--tw-colors-on-surface-variant);
+        }
+        .input-field {
+            @apply w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:ring-2 focus:ring-electric-indigo/20 focus:border-electric-indigo transition-all duration-200;
+        }
+        .input-label {
+            @apply font-label-caps text-label-caps text-on-surface-variant uppercase mb-2 block;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Background Tech Pattern -->
+<div class="fixed inset-0 z-[-1] opacity-5 pointer-events-none" style="background-image: radial-gradient(var(--tw-colors-charcoal-navy) 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Navigation Suppressed for Linear/Transactional Flow -->
+<main class="flex-grow pt-16 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary mb-6 tracking-tight">
+                Request a smart vending machine for your location
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Complete the form below to get started. Our team will review your requirements and provide a tailored modern refreshment solution for your space.
+            </p>
+</div>
+<!-- Form Container -->
+<div class="bg-surface rounded-xl shadow-lg border border-border-light p-6 md:p-12 relative overflow-hidden">
+<!-- Progress Indicator -->
+<div class="flex flex-col md:flex-row justify-between mb-12 relative">
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-surface-variant -z-10 -translate-y-1/2"></div>
+<div class="step-active flex flex-row md:flex-col items-center gap-4 md:gap-2 mb-6 md:mb-0 bg-surface md:bg-transparent pr-4 md:pr-0 z-10">
+<div class="step-icon w-10 h-10 rounded-full flex items-center justify-center font-button text-button transition-all duration-300">1</div>
+<span class="font-label-caps text-label-caps uppercase text-electric-indigo">Contact Details</span>
+</div>
+<div class="step-inactive flex flex-row md:flex-col items-center gap-4 md:gap-2 mb-6 md:mb-0 bg-surface md:bg-transparent px-4 md:px-0 z-10">
+<div class="step-icon w-10 h-10 rounded-full flex items-center justify-center font-button text-button transition-all duration-300">2</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Location Details</span>
+</div>
+<div class="step-inactive flex flex-row md:flex-col items-center gap-4 md:gap-2 mb-6 md:mb-0 bg-surface md:bg-transparent px-4 md:px-0 z-10">
+<div class="step-icon w-10 h-10 rounded-full flex items-center justify-center font-button text-button transition-all duration-300">3</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Requirements</span>
+</div>
+<div class="step-inactive flex flex-row md:flex-col items-center gap-4 md:gap-2 bg-surface md:bg-transparent pl-4 md:pl-0 z-10">
+<div class="step-icon w-10 h-10 rounded-full flex items-center justify-center font-button text-button transition-all duration-300">4</div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Review</span>
+</div>
+</div>
+<!-- Form Content (Step 1 Active) -->
+<form class="space-y-8" id="leadForm">
+<!-- Step 1: Contact Details -->
+<div class="space-y-6" id="step1">
+<h2 class="font-headline-md text-headline-md text-charcoal-navy border-b border-border-light pb-4 mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-electric-indigo" data-icon="person">person</span>
+                        Primary Contact Information
+                    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="input-label" for="firstName">First Name</label>
+<input class="input-field" id="firstName" name="firstName" placeholder="Jane" required="" type="text"/>
+</div>
+<div>
+<label class="input-label" for="lastName">Last Name</label>
+<input class="input-field" id="lastName" name="lastName" placeholder="Doe" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<label class="input-label" for="email">Business Email</label>
+<input class="input-field" id="email" name="email" placeholder="jane@company.co.uk" required="" type="email"/>
+</div>
+<div>
+<label class="input-label" for="phone">Phone Number (UK)</label>
+<input class="input-field" id="phone" name="phone" placeholder="07700 900077" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="input-label" for="company">Company Name</label>
+<input class="input-field" id="company" name="company" placeholder="Acme Corp Ltd" required="" type="text"/>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="pt-6 border-t border-border-light flex justify-end">
+<button class="bg-electric-indigo text-on-primary font-button text-button px-6 py-3 rounded-lg shadow-lg hover:shadow-[0_8px_16px_rgba(103,61,230,0.3)] hover:-translate-y-[2px] transition-all duration-300 flex items-center gap-2" type="button">
+                        Continue to Location
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</main>
+<!-- Footer Included for Professional Trust -->
+<footer class="w-full bg-charcoal-navy dark:bg-charcoal-navy grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto mt-auto">
+<div class="col-span-2 md:col-span-1">
+<div class="font-headline-md text-headline-md text-white mb-4">VendiSmart</div>
+<p class="font-body-md text-body-md text-on-tertiary-container mb-6">© 2024 VendiSmart UK. Modernizing Workplace Refreshments.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-cyan-tech uppercase mb-4">Company</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">How It Works</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Benefits</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Locations</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">About Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-cyan-tech uppercase mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">FAQs</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Help Center</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-cyan-tech uppercase mb-4">Legal</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Cookies</a></li>
+</ul>
+</div>
+</footer>
+</body></html>
