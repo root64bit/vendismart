@@ -125,10 +125,16 @@
         }
     </style>
 
-  <link rel="icon" type="image/png" href="assets/logo-icon.png"/>
-  <meta property="og:image" content="assets/hero-machine.jpg"/>
+  
+  <meta property="og:image" content="assets/vendismart-logo-social-light-1200x630.jpg"/>
   <link rel="stylesheet" href="assets/custom.css"/>
   <script src="assets/remotion-motion.js" defer></script>
+  <!-- Favicons & Manifest -->
+  <link rel="icon" href="favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+  <link rel="manifest" href="site.webmanifest"/>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
 <!-- Header / Navigation Suppressed due to "Linear/Transactional" / "Content Canvas" intent priority. -->
@@ -159,7 +165,10 @@
   <header class="fixed w-full top-0 left-0 z-50 glass-panel shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
       <a href="index.html" class="flex items-center gap-3 group">
-        <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+        <picture>
+          <source srcset="assets/vendismart-logo-horizontal-color-512.webp" type="image/webp"/>
+          <img src="assets/vendismart-logo-horizontal-color-512.png" alt="Vendismart Smart Vending UK" class="h-10 sm:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </picture>
       </a>
       <nav class="hidden md:flex items-center gap-8">
         <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="index.html">Home</a>
@@ -281,7 +290,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-10">
       <div class="md:col-span-2 flex flex-col gap-4">
         <a href="index.html" class="flex items-center gap-3">
-          <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto brightness-0 invert object-contain"/>
+          <picture>
+          <source srcset="assets/vendismart-logo-horizontal-color-512.webp" type="image/webp"/>
+          <img src="assets/vendismart-logo-horizontal-color-512.png" alt="Vendismart Smart Vending UK" class="h-10 sm:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+        </picture>
         </a>
         <p class="text-slate-400 text-sm max-w-sm leading-relaxed mt-2">
           VendiSmart UK provides fully managed, zero-cost smart vending machine solutions with cashless touchless payments and real-time telemetry restocking.
