@@ -32,7 +32,7 @@
                       "outline": "#797487",
                       "surface": "#f8f9fd",
                       "tertiary-fixed-dim": "#c7c6c8",
-                      "primary": "#37009e",
+                      "primary": "#002B49",
                       "surface-container-high": "#e7e8ec",
                       "error-container": "#ffdad6",
                       "on-surface": "#191c1f",
@@ -43,12 +43,12 @@
                       "on-primary-fixed-variant": "#4c10cb",
                       "on-primary-fixed": "#1e0060",
                       "background": "#f8f9fd",
-                      "electric-indigo": "#673DE6",
+                      "electric-indigo": "#0072CE",
                       "surface-variant": "#e1e2e6",
                       "inverse-on-surface": "#eff1f5",
                       "on-secondary-fixed": "#001f28",
                       "on-secondary-fixed-variant": "#004e60",
-                      "primary-container": "#4f17ce",
+                      "primary-container": "#00A859",
                       "on-surface-variant": "#484455",
                       "on-tertiary-fixed": "#1b1c1e",
                       "border-light": "#D5DFFF",
@@ -182,53 +182,57 @@
                               radial-gradient(at 100% 100%, hsla(191,100%,50%,0.1) 0px, transparent 50%);
         }
         .dot-pattern {
-            background-image: radial-gradient(#673DE6 1px, transparent 1px);
+            background-image: radial-gradient(#0072CE 1px, transparent 1px);
             background-size: 20px 20px;
             opacity: 0.05;
         }
     </style>
+
+  <link rel="icon" type="image/png" href="assets/logo-icon.png"/>
+  <meta property="og:image" content="assets/hero-machine.jpg"/>
+  <link rel="stylesheet" href="assets/custom.css"/>
+  <script src="assets/remotion-motion.js" defer></script>
 </head>
-<body class="bg-background text-on-background antialiased selection:bg-electric-indigo selection:text-white">
+<body class="bg-background text-on-background antialiased selection:bg-gradient-to-r from-[#0072CE] to-[#00A859] selection:text-white">
 <!-- TopNavBar Component -->
-<nav class="fixed w-full top-0 left-0 z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm transition-all duration-300" id="main-nav">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:scale-95 transition-transform flex items-center gap-2" href="#">
-<span class="material-symbols-outlined text-electric-indigo">qr_code_2</span>
-                VendiSmart
-            </a>
-<!-- Desktop Navigation -->
-<div class="hidden md:flex items-center gap-8">
-<div class="flex gap-6">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">How It Works</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">Benefits</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">Locations</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">About Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:translate-y-[-2px] transition-all duration-300" href="#">FAQs</a>
-</div>
-<a class="bg-electric-indigo text-on-primary px-6 py-2 rounded-full font-button text-button hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(103,61,230,0.3)] transition-all duration-300 flex items-center gap-2 group" href="#request">
-                    Request a Machine
-                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle Menu" class="md:hidden text-primary p-2" id="mobile-menu-btn">
-<span class="material-symbols-outlined text-2xl">menu</span>
-</button>
-</div>
-<!-- Mobile Navigation Menu -->
-<div class="md:hidden hidden bg-surface absolute top-full left-0 w-full shadow-lg border-t border-border-light" id="mobile-menu">
-<div class="flex flex-col px-margin-mobile py-4 space-y-4">
-<a class="text-on-surface-variant font-body-md py-2" href="#">Home</a>
-<a class="text-on-surface-variant font-body-md py-2" href="#">How It Works</a>
-<a class="text-primary font-bold font-body-md py-2" href="#">Benefits</a>
-<a class="text-on-surface-variant font-body-md py-2" href="#">Locations</a>
-<a class="text-on-surface-variant font-body-md py-2" href="#">About Us</a>
-<a class="text-on-surface-variant font-body-md py-2" href="#">FAQs</a>
-<a class="bg-electric-indigo text-on-primary px-4 py-3 rounded-full font-button text-center w-full mt-4" href="#request">Request a Machine</a>
-</div>
-</div>
-</nav>
+
+  <!-- Header -->
+  <header class="fixed w-full top-0 left-0 z-50 glass-panel shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="index.html">Home</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="how-it-works.html">How It Works</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="benefits.html">Benefits</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="locations.html">Locations</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="about.html">About Us</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="faqs.html">FAQs</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <div class="hidden md:block">
+        <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover-glow transition-all duration-300 flex items-center gap-2 text-sm" href="request-a-machine.html">
+          <span>Request a Machine</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+      <button class="md:hidden text-[#002B49] p-2" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+    <div class="md:hidden hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 top-full px-6 py-4 flex flex-col gap-3" id="mobile-menu">
+      <a class="text-[#002B49] font-medium py-2" href="index.html">Home</a>
+      <a class="text-[#002B49] font-medium py-2" href="how-it-works.html">How It Works</a>
+      <a class="text-[#002B49] font-medium py-2" href="benefits.html">Benefits</a>
+      <a class="text-[#002B49] font-medium py-2" href="locations.html">Locations</a>
+      <a class="text-[#002B49] font-medium py-2" href="about.html">About Us</a>
+      <a class="text-[#002B49] font-medium py-2" href="faqs.html">FAQs</a>
+      <a class="text-[#002B49] font-medium py-2" href="contact.html">Contact</a>
+      <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-4 py-3 rounded-xl text-center mt-2" href="request-a-machine.html">Request a Free Machine</a>
+    </div>
+  </header>
+
 <main class="pt-24 md:pt-32 pb-section-gap">
 <!-- Hero Section -->
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap relative">
@@ -241,12 +245,12 @@
                     </div>
 <h1 class="font-headline-lg-mobile md:font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background mb-6">
                         More convenience for your people.<br/>
-<span class="text-electric-indigo">Less work for your team.</span>
+<span class="text-[#0072CE]">Less work for your team.</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
                         Discover how our smart vending solutions transform your workspace, providing frictionless refreshments while eliminating operational headaches for facility managers.
                     </p>
-<a class="inline-flex items-center gap-2 bg-electric-indigo text-on-primary px-8 py-4 rounded-full font-button text-button hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(103,61,230,0.3)] transition-all duration-300 group" href="#request">
+<a class="inline-flex items-center gap-2 bg-gradient-to-r from-[#0072CE] to-[#00A859] text-on-primary px-8 py-4 rounded-full font-button text-button hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(103,61,230,0.3)] transition-all duration-300 group" href="#request">
                         Explore Our Solutions
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -266,7 +270,7 @@
 <div class="relative z-10 flex flex-col h-full justify-between">
 <div>
 <div class="w-12 h-12 rounded-xl bg-surface-bright flex items-center justify-center border border-border-light mb-6">
-<span class="material-symbols-outlined text-electric-indigo text-2xl">handshake</span>
+<span class="material-symbols-outlined text-[#0072CE] text-2xl">handshake</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-background mb-3">Fully Managed Service</h3>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md">From installation to daily restocking and maintenance, we take care of everything end-to-end. Your team never has to lift a finger to keep the breakroom stocked.</p>
@@ -287,7 +291,7 @@
 <!-- Card 3: Real-time Data (Spans 4 columns) -->
 <div class="md:col-span-4 bg-surface rounded-2xl p-8 border border-border-light shadow-sm hover:shadow-md transition-shadow flex flex-col">
 <div class="w-12 h-12 rounded-xl bg-surface-bright flex items-center justify-center border border-border-light mb-6">
-<span class="material-symbols-outlined text-electric-indigo text-2xl">monitoring</span>
+<span class="material-symbols-outlined text-[#0072CE] text-2xl">monitoring</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-background mb-3">Transparent Reporting</h3>
 <p class="font-body-md text-body-md text-on-surface-variant mt-auto">Access customized reports on consumption patterns, helping you understand what your team actually wants.</p>
@@ -296,7 +300,7 @@
 <div class="md:col-span-8 bg-surface-muted rounded-2xl p-8 border border-border-light shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col md:flex-row items-center gap-8">
 <div class="flex-1">
 <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center border border-border-light mb-6 shadow-sm">
-<span class="material-symbols-outlined text-electric-indigo text-2xl">sentiment_very_satisfied</span>
+<span class="material-symbols-outlined text-[#0072CE] text-2xl">sentiment_very_satisfied</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-background mb-3">Elevate Workplace Experience</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">Boost morale by providing premium, accessible refreshments 24/7. A well-stocked breakroom is a proven driver of employee satisfaction and productivity.</p>
@@ -310,14 +314,14 @@
 <!-- User Benefits (Cards) -->
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
 <div class="text-center mb-16 max-w-3xl mx-auto">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">Why Users Love <span class="text-electric-indigo">VendiSmart</span></h2>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">Why Users Love <span class="text-[#0072CE]">VendiSmart</span></h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant">We prioritize a frictionless, modern experience for every user, ensuring quick access to the products they want, exactly when they need them.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- User Benefit 1 -->
 <div class="bg-white rounded-2xl p-8 border border-border-light shadow-sm hover:-translate-y-2 transition-all duration-300">
 <div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-electric-indigo text-3xl">bolt</span>
+<span class="material-symbols-outlined text-[#0072CE] text-3xl">bolt</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-background mb-4">Instant Access</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">No waiting in line at a café. Grab premium snacks and drinks in seconds, getting you back to focus faster.</p>
@@ -333,7 +337,7 @@
 <!-- User Benefit 3 -->
 <div class="bg-white rounded-2xl p-8 border border-border-light shadow-sm hover:-translate-y-2 transition-all duration-300">
 <div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-electric-indigo text-3xl">local_mall</span>
+<span class="material-symbols-outlined text-[#0072CE] text-3xl">local_mall</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-background mb-4">Premium Selection</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">Curated choices ranging from healthy alternatives and protein snacks to classic treats and artisan coffee options.</p>
@@ -344,7 +348,7 @@
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
 <div class="bg-charcoal-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row relative">
 <!-- decorative glow -->
-<div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-electric-indigo/20 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-r from-[#0072CE] to-[#00A859]/20 blur-[100px] rounded-full pointer-events-none"></div>
 <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-cyan-tech/20 blur-[80px] rounded-full pointer-events-none"></div>
 <div class="lg:w-1/2 p-10 md:p-16 relative z-10 flex flex-col justify-center">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-container text-cyan-tech border border-tertiary font-label-caps text-label-caps mb-6 w-max">
@@ -401,55 +405,64 @@
 <section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center py-16 bg-surface rounded-3xl border border-border-light shadow-sm" id="request">
 <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background mb-4">Ready to upgrade your breakroom?</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl mx-auto">Get in touch today to discuss a tailored vending solution for your specific location and team size.</p>
-<a class="inline-flex items-center justify-center gap-2 bg-electric-indigo text-on-primary px-8 py-4 rounded-full font-button text-button hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(103,61,230,0.3)] transition-all duration-300 w-full md:w-auto" href="#">
+<a class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0072CE] to-[#00A859] text-on-primary px-8 py-4 rounded-full font-button text-button hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(103,61,230,0.3)] transition-all duration-300 w-full md:w-auto" href="#">
                 Request a Vending Machine
             </a>
 </section>
 </main>
 <!-- Footer Component -->
-<footer class="w-full bg-charcoal-navy dark:bg-charcoal-navy pt-section-gap pb-12 border-t border-tertiary">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
-<div class="col-span-2 md:col-span-1 mb-8 md:mb-0">
-<a class="font-headline-md text-headline-md text-white flex items-center gap-2 mb-6" href="#">
-<span class="material-symbols-outlined text-cyan-tech">qr_code_2</span>
-                    VendiSmart
-                </a>
-<p class="font-body-md text-sm text-on-tertiary-container max-w-xs">
-                    Modernizing Workplace Refreshments with smart, hassle-free vending solutions.
-                </p>
-</div>
-<div>
-<h4 class="text-white font-bold mb-4 font-body-lg">Company</h4>
-<ul class="space-y-3">
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">How It Works</a></li>
-<li><a class="text-cyan-tech font-body-md text-sm" href="#">Benefits</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Locations</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">About Us</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-white font-bold mb-4 font-body-lg">Support</h4>
-<ul class="space-y-3">
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">FAQs</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Contact Us</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Help Center</a></li>
-</ul>
-</div>
-<div>
-<h4 class="text-white font-bold mb-4 font-body-lg">Legal</h4>
-<ul class="space-y-3">
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Privacy Policy</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Terms of Service</a></li>
-<li><a class="text-on-tertiary-container hover:text-cyan-tech transition-colors font-body-md text-sm" href="#">Cookies</a></li>
-</ul>
-</div>
-</div>
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pt-8 border-t border-tertiary text-center md:text-left">
-<p class="font-body-md text-sm text-on-tertiary-container">
-                © 2024 VendiSmart UK. Modernizing Workplace Refreshments.
-            </p>
-</div>
-</footer>
+
+  <!-- Footer -->
+  <footer class="bg-[#001527] text-white border-t border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto brightness-0 invert object-contain"/>
+        </a>
+        <p class="text-slate-400 text-sm max-w-sm leading-relaxed mt-2">
+          VendiSmart UK provides fully managed, zero-cost smart vending machine solutions with cashless touchless payments and real-time telemetry restocking.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Solutions</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="how-it-works.html">How Telemetry Works</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="benefits.html">Venue Benefits</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="locations.html">Offices & Campuses</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="request-a-machine.html">Free Machine Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Company</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="about.html">About VendiSmart</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="faqs.html">FAQs</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="contact.html">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Legal</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="terms.html">Terms of Service</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="cookie-policy.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <p>© 2026 VendiSmart UK Ltd. All rights reserved. Registered Smart Vending Provider.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
 <script>
         // Simple Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {

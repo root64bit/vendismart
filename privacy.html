@@ -32,7 +32,7 @@
                       "outline": "#797487",
                       "surface": "#f8f9fd",
                       "tertiary-fixed-dim": "#c7c6c8",
-                      "primary": "#37009e",
+                      "primary": "#002B49",
                       "surface-container-high": "#e7e8ec",
                       "error-container": "#ffdad6",
                       "on-surface": "#191c1f",
@@ -43,12 +43,12 @@
                       "on-primary-fixed-variant": "#4c10cb",
                       "on-primary-fixed": "#1e0060",
                       "background": "#f8f9fd",
-                      "electric-indigo": "#673DE6",
+                      "electric-indigo": "#0072CE",
                       "surface-variant": "#e1e2e6",
                       "inverse-on-surface": "#eff1f5",
                       "on-secondary-fixed": "#001f28",
                       "on-secondary-fixed-variant": "#004e60",
-                      "primary-container": "#4f17ce",
+                      "primary-container": "#00A859",
                       "on-surface-variant": "#484455",
                       "on-tertiary-fixed": "#1b1c1e",
                       "border-light": "#D5DFFF",
@@ -186,8 +186,8 @@
         }
         
         .toc-link:hover, .toc-link.active {
-            border-left-color: #673DE6;
-            color: #673DE6;
+            border-left-color: #0072CE;
+            color: #0072CE;
             padding-left: 8px;
         }
 
@@ -199,6 +199,11 @@
             scroll-margin-top: 100px;
         }
     </style>
+
+  <link rel="icon" type="image/png" href="assets/logo-icon.png"/>
+  <meta property="og:image" content="assets/hero-machine.jpg"/>
+  <link rel="stylesheet" href="assets/custom.css"/>
+  <script src="assets/remotion-motion.js" defer></script>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col relative overflow-x-hidden">
 <!-- TopNavBar Suppressed: This is a legal page, considered a "dead end" relative to global nav -->
@@ -208,7 +213,7 @@
 <div class="font-headline-md text-headline-md font-bold text-primary">
                 VendiSmart
             </div>
-<a class="text-on-surface-variant hover:text-electric-indigo transition-colors flex items-center gap-2 font-button text-button" href="#">
+<a class="text-on-surface-variant hover:text-[#0072CE] transition-colors flex items-center gap-2 font-button text-button" href="#">
 <span class="material-symbols-outlined text-[20px]">arrow_back</span>
                 Back to Site
             </a>
@@ -216,7 +221,7 @@
 </header>
 <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap relative">
 <!-- Decorative Background Element -->
-<div class="absolute top-0 right-0 w-1/2 h-96 bg-electric-indigo/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="absolute top-0 right-0 w-1/2 h-96 bg-gradient-to-r from-[#0072CE] to-[#00A859]/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
 <!-- Page Header -->
 <div class="mb-16">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container border border-outline-variant mb-6">
@@ -244,16 +249,44 @@
 <span class="material-symbols-outlined">list</span>
                         Contents
                     </h3>
-<nav class="flex flex-col gap-3 font-body-md text-body-md text-on-surface-variant">
-<a class="toc-link block text-sm" href="#introduction">1. Introduction</a>
-<a class="toc-link block text-sm" href="#data-collection">2. Data We Collect</a>
-<a class="toc-link block text-sm" href="#data-usage">3. How We Use Your Data</a>
-<a class="toc-link block text-sm" href="#data-sharing">4. Data Sharing &amp; Transfers</a>
-<a class="toc-link block text-sm" href="#data-security">5. Data Security &amp; Retention</a>
-<a class="toc-link block text-sm" href="#your-rights">6. Your Legal Rights</a>
-<a class="toc-link block text-sm" href="#cookies">7. Cookies &amp; Tracking</a>
-<a class="toc-link block text-sm" href="#contact">8. Contact Us</a>
-</nav>
+
+  <!-- Header -->
+  <header class="fixed w-full top-0 left-0 z-50 glass-panel shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="index.html">Home</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="how-it-works.html">How It Works</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="benefits.html">Benefits</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="locations.html">Locations</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="about.html">About Us</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="faqs.html">FAQs</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <div class="hidden md:block">
+        <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover-glow transition-all duration-300 flex items-center gap-2 text-sm" href="request-a-machine.html">
+          <span>Request a Machine</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+      <button class="md:hidden text-[#002B49] p-2" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+    <div class="md:hidden hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 top-full px-6 py-4 flex flex-col gap-3" id="mobile-menu">
+      <a class="text-[#002B49] font-medium py-2" href="index.html">Home</a>
+      <a class="text-[#002B49] font-medium py-2" href="how-it-works.html">How It Works</a>
+      <a class="text-[#002B49] font-medium py-2" href="benefits.html">Benefits</a>
+      <a class="text-[#002B49] font-medium py-2" href="locations.html">Locations</a>
+      <a class="text-[#002B49] font-medium py-2" href="about.html">About Us</a>
+      <a class="text-[#002B49] font-medium py-2" href="faqs.html">FAQs</a>
+      <a class="text-[#002B49] font-medium py-2" href="contact.html">Contact</a>
+      <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-4 py-3 rounded-xl text-center mt-2" href="request-a-machine.html">Request a Free Machine</a>
+    </div>
+  </header>
+
 </div>
 </aside>
 <!-- Main Content Area -->
@@ -272,7 +305,7 @@
 <div class="prose prose-slate max-w-none font-body-md text-body-md text-on-surface-variant space-y-4">
 <p>Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).</p>
 <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:</p>
-<ul class="list-disc pl-5 space-y-2 marker:text-electric-indigo">
+<ul class="list-disc pl-5 space-y-2 marker:text-[#0072CE]">
 <li><strong>Identity Data</strong> includes first name, last name, username or similar identifier, title, and company name.</li>
 <li><strong>Contact Data</strong> includes billing address, delivery address, email address and telephone numbers.</li>
 <li><strong>Financial Data</strong> includes bank account and payment card details (processed securely via our third-party payment gateways).</li>
@@ -287,7 +320,7 @@
 <h2 class="font-headline-md text-headline-md text-on-background mb-4">3. How We Use Your Personal Data</h2>
 <div class="prose prose-slate max-w-none font-body-md text-body-md text-on-surface-variant space-y-4">
 <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
-<ul class="list-disc pl-5 space-y-2 marker:text-electric-indigo">
+<ul class="list-disc pl-5 space-y-2 marker:text-[#0072CE]">
 <li>Where we need to perform the contract we are about to enter into or have entered into with you.</li>
 <li>Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests.</li>
 <li>Where we need to comply with a legal obligation.</li>
@@ -301,28 +334,28 @@
 <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data. These include the right to:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
 <div class="p-4 border border-border-light rounded-lg bg-surface flex items-start gap-3">
-<span class="material-symbols-outlined text-electric-indigo">visibility</span>
+<span class="material-symbols-outlined text-[#0072CE]">visibility</span>
 <div>
 <strong class="text-on-background block mb-1">Request Access</strong>
 <span class="text-sm">Commonly known as a "data subject access request".</span>
 </div>
 </div>
 <div class="p-4 border border-border-light rounded-lg bg-surface flex items-start gap-3">
-<span class="material-symbols-outlined text-electric-indigo">edit</span>
+<span class="material-symbols-outlined text-[#0072CE]">edit</span>
 <div>
 <strong class="text-on-background block mb-1">Request Correction</strong>
 <span class="text-sm">Correct incomplete or inaccurate data we hold about you.</span>
 </div>
 </div>
 <div class="p-4 border border-border-light rounded-lg bg-surface flex items-start gap-3">
-<span class="material-symbols-outlined text-electric-indigo">delete</span>
+<span class="material-symbols-outlined text-[#0072CE]">delete</span>
 <div>
 <strong class="text-on-background block mb-1">Request Erasure</strong>
 <span class="text-sm">Ask us to delete or remove personal data where there is no good reason for us continuing to process it.</span>
 </div>
 </div>
 <div class="p-4 border border-border-light rounded-lg bg-surface flex items-start gap-3">
-<span class="material-symbols-outlined text-electric-indigo">block</span>
+<span class="material-symbols-outlined text-[#0072CE]">block</span>
 <div>
 <strong class="text-on-background block mb-1">Object to Processing</strong>
 <span class="text-sm">Object where we are relying on a legitimate interest.</span>
@@ -338,7 +371,7 @@
                         If you have any questions about this privacy notice or our privacy practices, please contact our data privacy manager in the following ways:
                     </p>
 <div class="flex flex-col gap-4">
-<a class="inline-flex items-center gap-3 font-button text-button text-electric-indigo hover:text-primary-container transition-colors group" href="mailto:partnerships@vendismart.co.uk">
+<a class="inline-flex items-center gap-3 font-button text-button text-[#0072CE] hover:text-primary-container transition-colors group" href="mailto:partnerships@vendismart.co.uk">
 <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center group-hover:scale-105 transition-transform">
 <span class="material-symbols-outlined text-[20px] text-primary">mail</span>
 </div>
@@ -356,44 +389,69 @@
 </div>
 </main>
 <!-- Footer Component injected verbatim from JSON constraints -->
-<footer class="w-full bg-charcoal-navy dark:bg-charcoal-navy mt-auto">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="col-span-2 md:col-span-1 flex flex-col gap-4">
-<span class="font-headline-md text-headline-md text-white font-bold">VendiSmart</span>
-<p class="font-body-md text-body-md text-on-tertiary-container text-sm">© 2024 VendiSmart UK. Modernizing Workplace Refreshments.</p>
-</div>
-<div class="flex flex-col gap-3 font-body-md text-body-md">
-<span class="text-white font-semibold mb-2">Company</span>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">How It Works</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Benefits</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Locations</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">About Us</a>
-</div>
-<div class="flex flex-col gap-3 font-body-md text-body-md">
-<span class="text-white font-semibold mb-2">Support</span>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">FAQs</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Contact Us</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Help Center</a>
-</div>
-<div class="flex flex-col gap-3 font-body-md text-body-md">
-<span class="text-white font-semibold mb-2">Legal</span>
-<a class="text-cyan-tech transition-colors" href="#">Privacy Policy</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Terms of Service</a>
-<a class="text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Cookies</a>
-</div>
-</div>
-</footer>
+
+  <!-- Footer -->
+  <footer class="bg-[#001527] text-white border-t border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto brightness-0 invert object-contain"/>
+        </a>
+        <p class="text-slate-400 text-sm max-w-sm leading-relaxed mt-2">
+          VendiSmart UK provides fully managed, zero-cost smart vending machine solutions with cashless touchless payments and real-time telemetry restocking.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Solutions</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="how-it-works.html">How Telemetry Works</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="benefits.html">Venue Benefits</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="locations.html">Offices & Campuses</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="request-a-machine.html">Free Machine Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Company</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="about.html">About VendiSmart</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="faqs.html">FAQs</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="contact.html">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Legal</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="terms.html">Terms of Service</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="cookie-policy.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <p>© 2026 VendiSmart UK Ltd. All rights reserved. Registered Smart Vending Provider.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
 <!-- Global Cookie Consent Banner -->
 <div class="fixed bottom-0 left-0 w-full z-50 glass-panel border-t border-border-light transform translate-y-0 transition-transform duration-500 ease-in-out shadow-[0_-10px_40px_rgba(0,0,0,0.1)]" id="cookie-banner">
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 <div class="flex items-start gap-4 flex-1">
-<div class="w-12 h-12 rounded-full bg-electric-indigo/10 flex items-center justify-center flex-shrink-0 mt-1 md:mt-0">
-<span class="material-symbols-outlined text-electric-indigo">cookie</span>
+<div class="w-12 h-12 rounded-full bg-gradient-to-r from-[#0072CE] to-[#00A859]/10 flex items-center justify-center flex-shrink-0 mt-1 md:mt-0">
+<span class="material-symbols-outlined text-[#0072CE]">cookie</span>
 </div>
 <div>
 <h4 class="font-button text-button text-on-background mb-1">We value your privacy</h4>
 <p class="font-body-md text-sm text-on-surface-variant max-w-2xl">
-                        We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read more in our <a class="text-electric-indigo underline" href="#">Cookie Policy</a>.
+                        We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read more in our <a class="text-[#0072CE] underline" href="#">Cookie Policy</a>.
                     </p>
 </div>
 </div>
@@ -404,7 +462,7 @@
 <button class="px-4 py-2 font-button text-button text-charcoal-navy bg-white border border-border-light hover:bg-surface-dim rounded-lg transition-colors" onclick="dismissCookieBanner()">
                     Reject All
                 </button>
-<button class="px-6 py-2 font-button text-button text-on-primary bg-electric-indigo hover:translate-y-[-2px] hover:shadow-[0_4px_14px_0_rgba(103,61,230,0.39)] rounded-lg transition-all duration-300" onclick="dismissCookieBanner()">
+<button class="px-6 py-2 font-button text-button text-on-primary bg-gradient-to-r from-[#0072CE] to-[#00A859] hover:translate-y-[-2px] hover:shadow-[0_4px_14px_0_rgba(103,61,230,0.39)] rounded-lg transition-all duration-300" onclick="dismissCookieBanner()">
                     Accept All
                 </button>
 </div>

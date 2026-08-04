@@ -32,7 +32,7 @@
                       "outline": "#797487",
                       "surface": "#f8f9fd",
                       "tertiary-fixed-dim": "#c7c6c8",
-                      "primary": "#37009e",
+                      "primary": "#002B49",
                       "surface-container-high": "#e7e8ec",
                       "error-container": "#ffdad6",
                       "on-surface": "#191c1f",
@@ -43,12 +43,12 @@
                       "on-primary-fixed-variant": "#4c10cb",
                       "on-primary-fixed": "#1e0060",
                       "background": "#f8f9fd",
-                      "electric-indigo": "#673DE6",
+                      "electric-indigo": "#0072CE",
                       "surface-variant": "#e1e2e6",
                       "inverse-on-surface": "#eff1f5",
                       "on-secondary-fixed": "#001f28",
                       "on-secondary-fixed-variant": "#004e60",
-                      "primary-container": "#4f17ce",
+                      "primary-container": "#00A859",
                       "on-surface-variant": "#484455",
                       "on-tertiary-fixed": "#1b1c1e",
                       "border-light": "#D5DFFF",
@@ -183,50 +183,67 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(90deg, #37009e, #673DE6);
+            background-image: linear-gradient(90deg, #002B49, #0072CE);
         }
         .glow-shadow {
             box-shadow: 0 10px 30px -10px rgba(0, 209, 255, 0.4);
         }
       </style>
+
+  <link rel="icon" type="image/png" href="assets/logo-icon.png"/>
+  <meta property="og:image" content="assets/hero-machine.jpg"/>
+  <link rel="stylesheet" href="assets/custom.css"/>
+  <script src="assets/remotion-motion.js" defer></script>
 </head>
 <body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
 <!-- Top Navigation (Shared Component) -->
-<nav class="fixed w-full top-0 left-0 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
-<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed hover:translate-y-[-2px] transition-all duration-300" href="#">
-                VendiSmart
-            </a>
-<!-- Desktop Nav -->
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md hover:translate-y-[-2px] duration-300" href="#">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md hover:translate-y-[-2px] duration-300" href="#">How It Works</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md hover:translate-y-[-2px] duration-300" href="#">Benefits</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md hover:translate-y-[-2px] duration-300 active:scale-95 transition-transform" href="#">Locations</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md hover:translate-y-[-2px] duration-300" href="#">About Us</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md hover:translate-y-[-2px] duration-300" href="#">FAQs</a>
-</div>
-<div class="hidden md:flex items-center">
-<button class="bg-electric-indigo text-on-primary font-button text-button px-6 py-3 rounded-lg hover:translate-y-[-2px] transition-all duration-300 glow-shadow active:scale-95 flex items-center group">
-                    Request a Machine
-                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
-</button>
-</div>
-<!-- Mobile Menu Toggle -->
-<button aria-label="Toggle Menu" class="md:hidden text-on-surface p-2">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-</nav>
+
+  <!-- Header -->
+  <header class="fixed w-full top-0 left-0 z-50 glass-panel shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"/>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="index.html">Home</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="how-it-works.html">How It Works</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="benefits.html">Benefits</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="locations.html">Locations</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="about.html">About Us</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="faqs.html">FAQs</a>
+        <a class="text-[#002B49] hover:text-[#0072CE] font-semibold transition-colors" href="contact.html">Contact</a>
+      </nav>
+      <div class="hidden md:block">
+        <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg hover-glow transition-all duration-300 flex items-center gap-2 text-sm" href="request-a-machine.html">
+          <span>Request a Machine</span>
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+      <button class="md:hidden text-[#002B49] p-2" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+    <div class="md:hidden hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0 top-full px-6 py-4 flex flex-col gap-3" id="mobile-menu">
+      <a class="text-[#002B49] font-medium py-2" href="index.html">Home</a>
+      <a class="text-[#002B49] font-medium py-2" href="how-it-works.html">How It Works</a>
+      <a class="text-[#002B49] font-medium py-2" href="benefits.html">Benefits</a>
+      <a class="text-[#002B49] font-medium py-2" href="locations.html">Locations</a>
+      <a class="text-[#002B49] font-medium py-2" href="about.html">About Us</a>
+      <a class="text-[#002B49] font-medium py-2" href="faqs.html">FAQs</a>
+      <a class="text-[#002B49] font-medium py-2" href="contact.html">Contact</a>
+      <a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-white font-semibold px-4 py-3 rounded-xl text-center mt-2" href="request-a-machine.html">Request a Free Machine</a>
+    </div>
+  </header>
+
 <!-- Main Content -->
 <main class="flex-grow pt-[100px]">
 <!-- Hero Section -->
 <section class="relative py-20 md:py-32 px-margin-mobile md:px-margin-desktop overflow-hidden bg-surface-muted">
-<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#673DE6 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#0072CE 1px, transparent 1px); background-size: 24px 24px;"></div>
 <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative z-10">
 <div class="space-y-6">
 <div class="inline-flex items-center bg-surface-container px-4 py-2 rounded-full border border-border-light shadow-sm">
-<span class="material-symbols-outlined text-electric-indigo mr-2 text-sm">location_on</span>
+<span class="material-symbols-outlined text-[#0072CE] mr-2 text-sm">location_on</span>
 <span class="font-label-caps text-label-caps text-on-surface uppercase">Strategic Placements</span>
 </div>
 <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">
@@ -236,7 +253,7 @@
                         Discover where our intelligent, hassle-free refreshment systems perform best. From busy offices to round-the-clock hospitals, VendiSmart adapts to your environment.
                     </p>
 <div class="pt-4 flex flex-col sm:flex-row gap-4">
-<a class="bg-electric-indigo text-on-primary font-button text-button px-8 py-4 rounded-lg text-center hover:translate-y-[-2px] transition-all duration-300 glow-shadow flex items-center justify-center group" href="#enquire">
+<a class="bg-gradient-to-r from-[#0072CE] to-[#00A859] text-on-primary font-button text-button px-8 py-4 rounded-lg text-center hover:translate-y-[-2px] transition-all duration-300 glow-shadow flex items-center justify-center group" href="#enquire">
                             Submit a Location Enquiry
                             <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -253,7 +270,7 @@
 <h3 class="font-headline-md text-sm md:text-base font-bold text-on-surface">Seamless Integration</h3>
 <p class="font-body-md text-xs md:text-sm text-on-surface-variant">Zero footprint disruption.</p>
 </div>
-<span class="material-symbols-outlined text-electric-indigo text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="material-symbols-outlined text-[#0072CE] text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
 </div>
 </div>
 </div>
@@ -363,14 +380,14 @@
 </div>
 <!-- Enquiry Form Bento Box -->
 <div class="bg-surface rounded-2xl p-8 md:p-10 shadow-2xl relative" id="enquire">
-<div class="absolute -top-4 -right-4 w-24 h-24 bg-electric-indigo/10 rounded-full blur-2xl"></div>
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-[#0072CE] to-[#00A859]/10 rounded-full blur-2xl"></div>
 <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-cyan-tech/10 rounded-full blur-2xl"></div>
 <div class="relative z-10">
 <h3 class="font-headline-md text-xl font-bold text-on-background mb-6">Submit a Location Enquiry</h3>
 <form class="space-y-5">
 <div>
 <label class="block font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase">Location Type</label>
-<select class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-electric-indigo focus:ring focus:ring-electric-indigo/20 transition-all outline-none">
+<select class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-[#00A859] focus:ring focus:ring-electric-indigo/20 transition-all outline-none">
 <option>Office / Business Centre</option>
 <option>University / College</option>
 <option>Hospital / Healthcare</option>
@@ -381,18 +398,18 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
 <div>
 <label class="block font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase">Estimated Daily Footfall</label>
-<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-electric-indigo focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="e.g. 150" type="number"/>
+<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-[#00A859] focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="e.g. 150" type="number"/>
 </div>
 <div>
 <label class="block font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase">Postcode</label>
-<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-electric-indigo focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="e.g. EC1A 1BB" type="text"/>
+<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-[#00A859] focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="e.g. EC1A 1BB" type="text"/>
 </div>
 </div>
 <div>
 <label class="block font-label-caps text-label-caps text-on-surface-variant mb-1 uppercase">Contact Email</label>
-<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-electric-indigo focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="you@company.com" type="email"/>
+<input class="w-full bg-surface-bright border border-outline-variant rounded-lg px-4 py-3 font-body-md text-on-surface focus:border-[#00A859] focus:ring focus:ring-electric-indigo/20 transition-all outline-none" placeholder="you@company.com" type="email"/>
 </div>
-<button class="w-full bg-electric-indigo text-on-primary font-button text-button px-6 py-4 rounded-lg hover:translate-y-[-2px] transition-all duration-300 glow-shadow mt-4" type="button">
+<button class="w-full bg-gradient-to-r from-[#0072CE] to-[#00A859] text-on-primary font-button text-button px-6 py-4 rounded-lg hover:translate-y-[-2px] transition-all duration-300 glow-shadow mt-4" type="button">
                                 Check Eligibility
                             </button>
 <p class="font-body-md text-xs text-on-surface-variant text-center mt-4">
@@ -405,36 +422,56 @@
 </section>
 </main>
 <!-- Footer (Shared Component) -->
-<footer class="w-full bg-charcoal-navy dark:bg-charcoal-navy flat grid grid-cols-2 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto">
-<div class="col-span-2 md:col-span-1 flex flex-col space-y-4">
-<div class="font-headline-md text-headline-md text-white font-bold">VendiSmart</div>
-<div class="font-body-md text-body-md text-on-tertiary-container mt-2 max-w-xs">
-                Modernizing Workplace Refreshments. Smart, reliable, and hassle-free vending solutions for modern spaces.
-            </div>
-</div>
-<div class="flex flex-col space-y-3">
-<h4 class="font-button text-button text-white mb-2">Company</h4>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">How It Works</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Benefits</a>
-<a class="font-body-md text-body-md text-cyan-tech transition-colors" href="#">Locations</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">About Us</a>
-</div>
-<div class="flex flex-col space-y-3">
-<h4 class="font-button text-button text-white mb-2">Support</h4>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">FAQs</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Contact Us</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Help Center</a>
-</div>
-<div class="flex flex-col space-y-3 col-span-2 md:col-span-1">
-<h4 class="font-button text-button text-white mb-2">Legal</h4>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Terms of Service</a>
-<a class="font-body-md text-body-md text-on-tertiary-container hover:text-cyan-tech transition-colors" href="#">Cookies</a>
-</div>
-<div class="col-span-2 md:col-span-4 mt-8 pt-8 border-t border-tertiary/50">
-<p class="font-body-md text-sm text-on-tertiary-container text-center md:text-left">
-                © 2024 VendiSmart UK. Modernizing Workplace Refreshments.
-            </p>
-</div>
-</footer>
+
+  <!-- Footer -->
+  <footer class="bg-[#001527] text-white border-t border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-10">
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/vendismart-logo.png" alt="VendiSmart Logo" class="h-10 w-auto brightness-0 invert object-contain"/>
+        </a>
+        <p class="text-slate-400 text-sm max-w-sm leading-relaxed mt-2">
+          VendiSmart UK provides fully managed, zero-cost smart vending machine solutions with cashless touchless payments and real-time telemetry restocking.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Solutions</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="how-it-works.html">How Telemetry Works</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="benefits.html">Venue Benefits</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="locations.html">Offices & Campuses</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="request-a-machine.html">Free Machine Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Company</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="about.html">About VendiSmart</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="faqs.html">FAQs</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="contact.html">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xs font-bold text-[#00A859] uppercase tracking-wider mb-4">Legal</h4>
+        <ul class="flex flex-col gap-2.5 text-sm text-slate-300">
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="privacy.html">Privacy Policy</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="terms.html">Terms of Service</a></li>
+          <li><a class="hover:text-[#00A3E0] transition-colors" href="cookie-policy.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+      <p>© 2026 VendiSmart UK Ltd. All rights reserved. Registered Smart Vending Provider.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
 </body></html>
