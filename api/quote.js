@@ -1,5 +1,4 @@
 export default async function handler(req, res) {
-  // Set CORS headers
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
@@ -21,20 +20,22 @@ export default async function handler(req, res) {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const { firstName, lastName, email, phone, company, facilityType, footfall, installationAddress, postcode, specialNotes } = body || {};
 
-    const web3key = process.env.WEB3FORMS_KEY || "02397f7c-ee04-4b29-8251-06130926a7e6"; // Placeholder / user key
+    const web3key = process.env.WEB3FORMS_KEY || "02397f7c-ee04-4b29-8251-06130926a7e6";
 
-    // Forward to Web3Forms API
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Origin": "https://www.vendismart.co.uk",
+        "Referer": "https://www.vendismart.co.uk/request-a-machine.html",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
       },
       body: JSON.stringify({
         access_key: web3key,
         to_email: "partnerships@vendismart.co.uk",
         subject: `New Quotation Request: ${company || firstName}`,
-        from_name: "VendiSmart Quotation Form",
+        from_name: "VendiSmart Website Quotation",
         name: `${firstName || ''} ${lastName || ''}`.trim(),
         email: email,
         phone: phone,
@@ -42,7 +43,7 @@ export default async function handler(req, res) {
         facility_type: facilityType,
         footfall: footfall,
         address: `${installationAddress || ''}, ${postcode || ''}`,
-        notes: specialNotes
+        message: `Company: ${company}\nFacility Type: ${facilityType}\nFootfall: ${footfall}\nAddress: ${installationAddress}, ${postcode}\nNotes: ${specialNotes}`
       })
     });
 

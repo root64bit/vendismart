@@ -387,37 +387,21 @@
       submitBtn.disabled = true;
       btnText.innerText = "Sending Quotation...";
 
-      const payload = {
-        firstName: document.getElementById('firstName')?.value || '',
-        lastName: document.getElementById('lastName')?.value || '',
-        email: document.getElementById('email')?.value || '',
-        phone: document.getElementById('phone')?.value || '',
-        company: document.getElementById('company')?.value || '',
-        facilityType: document.getElementById('facilityType')?.value || '',
-        footfall: document.getElementById('footfall')?.value || '',
-        installationAddress: document.querySelector('input[name="Installation Address"]')?.value || '',
-        postcode: document.querySelector('input[name="Postcode"]')?.value || '',
-        specialNotes: document.querySelector('textarea[name="Special Notes"]')?.value || ''
-      };
-
       try {
-        // Try Vercel Serverless Function /api/quote
-        await fetch("/api/quote", {
+        const formData = new FormData(form);
+        formData.set("access_key", "02397f7c-ee04-4b29-8251-06130926a7e6");
+        formData.set("to_email", "partnerships@vendismart.co.uk");
+        formData.set("subject", "New VendiSmart Quotation Request");
+
+        // Send directly to Web3Forms from browser client
+        const response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
+          body: formData
         });
+        const result = await response.json();
+        console.log("Web3Forms submission result:", result);
       } catch (err) {
-        // Fallback Web3Forms submit
-        try {
-          const formData = new FormData(form);
-          await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-          });
-        } catch (e2) {
-          console.log("Form submit completed");
-        }
+        console.log("Form submission fallback executed");
       } finally {
         document.getElementById('successModal').classList.remove('hidden');
         submitBtn.disabled = false;

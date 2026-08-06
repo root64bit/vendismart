@@ -26,7 +26,10 @@ export default async function handler(req, res) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "Origin": "https://www.vendismart.co.uk",
+        "Referer": "https://www.vendismart.co.uk/contact.html",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
       },
       body: JSON.stringify({
         access_key: web3key,
