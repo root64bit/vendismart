@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const { name, email, phone, org, enquiry_type, message } = body || {};
 
-    const web3key = process.env.WEB3FORMS_KEY || "02397f7c-ee04-4b29-8251-06130926a7e6";
+    const web3key = process.env.WEB3FORMS_KEY || "7b504274-88bf-455a-9bd0-9023438c982b";
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
