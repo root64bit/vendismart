@@ -1,0 +1,93 @@
+[
+  {
+    "title": "Homepage Hero - Desktop",
+    "jpg": "JPG/01_homepage_hero_desktop_1920x1200.jpg",
+    "webp": "WEBP/01_homepage_hero_desktop_1920x1200.webp",
+    "width": 1920,
+    "height": 1200
+  },
+  {
+    "title": "Homepage Hero - Mobile",
+    "jpg": "JPG/02_homepage_hero_mobile_1080x1350.jpg",
+    "webp": "WEBP/02_homepage_hero_mobile_1080x1350.webp",
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "title": "Corporate Office",
+    "jpg": "JPG/03_corporate_office_1200x900.jpg",
+    "webp": "WEBP/03_corporate_office_1200x900.webp",
+    "width": 1200,
+    "height": 900
+  },
+  {
+    "title": "University and College",
+    "jpg": "JPG/04_university_college_1200x900.jpg",
+    "webp": "WEBP/04_university_college_1200x900.webp",
+    "width": 1200,
+    "height": 900
+  },
+  {
+    "title": "Gym and Leisure",
+    "jpg": "JPG/05_gym_leisure_1200x900.jpg",
+    "webp": "WEBP/05_gym_leisure_1200x900.webp",
+    "width": 1200,
+    "height": 900
+  },
+  {
+    "title": "Logistics and Factory",
+    "jpg": "JPG/06_logistics_factory_1200x900.jpg",
+    "webp": "WEBP/06_logistics_factory_1200x900.webp",
+    "width": 1200,
+    "height": 900
+  },
+  {
+    "title": "How It Works - Installation",
+    "jpg": "JPG/07_how_it_works_installation_1600x1000.jpg",
+    "webp": "WEBP/07_how_it_works_installation_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "Benefits - Workplace Experience",
+    "jpg": "JPG/08_benefits_workplace_1600x1000.jpg",
+    "webp": "WEBP/08_benefits_workplace_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "Telemetry and Smart Management",
+    "jpg": "JPG/09_telemetry_smart_management_1600x1000.jpg",
+    "webp": "WEBP/09_telemetry_smart_management_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "Locations - Hero",
+    "jpg": "JPG/10_locations_hero_1600x1000.jpg",
+    "webp": "WEBP/10_locations_hero_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "About Us - Operations Team",
+    "jpg": "JPG/11_about_us_operations_team_1600x1000.jpg",
+    "webp": "WEBP/11_about_us_operations_team_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "Contact - Partnership",
+    "jpg": "JPG/12_contact_partnership_1600x1000.jpg",
+    "webp": "WEBP/12_contact_partnership_1600x1000.webp",
+    "width": 1600,
+    "height": 1000
+  },
+  {
+    "title": "Request Your Free Machine - CTA",
+    "jpg": "JPG/13_request_free_machine_cta_1920x700.jpg",
+    "webp": "WEBP/13_request_free_machine_cta_1920x700.webp",
+    "width": 1920,
+    "height": 700
+  }
+]
