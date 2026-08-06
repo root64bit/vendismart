@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     const { firstName, lastName, email, phone, company, facilityType, footfall, installationAddress, postcode, specialNotes } = body || {};
 
-    const web3key = process.env.WEB3FORMS_KEY || "a1b2c3d4-e5f6-7890-abcd-1234567890ab"; // Placeholder / user key
+    const web3key = process.env.WEB3FORMS_KEY || "02397f7c-ee04-4b29-8251-06130926a7e6"; // Placeholder / user key
 
     // Forward to Web3Forms API
     const response = await fetch("https://api.web3forms.com/submit", {
